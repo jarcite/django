@@ -25,8 +25,15 @@ SECRET_KEY = 'i2ne85xnjwt&xq9#pxtk2px1y(a39r2$q5cmkcdwvsf72_86pq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-dsqzb.run.goorm.io']
+ALLOWED_HOSTS = ['django-dsqzb.run.goorm.io', "arcipond.pythonanywhere.com", "127.0.0.1", "localhost"]
 
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'arcipond@gmail.com'
+EMAIL_HOST_PASSWORD = 'kidaexqrbsmqjsyb'
 
 # Application definition
 
